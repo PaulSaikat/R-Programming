@@ -1,0 +1,9 @@
+A<-matrix(c(2,4,3,1,5,7),nrow=2,ncol=3,byrow=TRUE)
+B<-matrix(c(2,4,3,1,5,7),nrow=2,ncol=3,byrow=FALSE)
+D<-matrix(c(4,2,0,-5,8,7),nrow=6,ncol=1,byrow=FALSE)
+dim(A)[1]*dim(B)[2]
+A[,c(1,3)]
+ncol(A)
+nrow(A)
+A2<-t(A)
+dimnames(A)<-list(c("row1","row2"),c("col1","col2","col3"))

@@ -1,0 +1,8 @@
+library(MASS)
+library(reshape)
+library(reshape2)
+data("ships")
+molten.ships <- melt(ships, id = c("type","year"))
+print(molten.ships)
+recasted.ship <- cast(molten.ships, type+year~variable,sum)
+print(recasted.ship)
